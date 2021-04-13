@@ -1,0 +1,10 @@
+list=[-1,2,-6,3,4,0,5,-10,-2,-3]
+s=0
+e=len(list)-1
+while(s<e):
+    if(list[s]>=0):
+        s=s+1
+    else:
+        list[s],list[e]=list[e],list[s]
+        e=e-1
+print(list)
